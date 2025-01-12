@@ -70,7 +70,7 @@ public class TambahProduk extends javax.swing.JDialog {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel1.setBackground(new java.awt.Color(23, 21, 59));
         jPanel1.setFont(new java.awt.Font("JetBrains Mono", 0, 13)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
@@ -203,9 +203,10 @@ public class TambahProduk extends javax.swing.JDialog {
                                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addGap(38, 38, 38)))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(21, 21, 21))
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(21, 21, 21)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtStok)
                                     .addComponent(txtHargaBeli)
@@ -226,7 +227,7 @@ public class TambahProduk extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(39, 39, 39)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(634, Short.MAX_VALUE)))
+                    .addContainerGap(647, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -279,7 +280,7 @@ public class TambahProduk extends javax.swing.JDialog {
                     .addContainerGap(338, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 520));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 520));
 
         pack();
         setLocationRelativeTo(null);

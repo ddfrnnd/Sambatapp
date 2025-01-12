@@ -33,9 +33,9 @@ public class KasirPage extends javax.swing.JFrame {
     CardLayout cardLayout;
     Profile p;
     DefaultTableModel tableModel;
-    Color defaultColor = new Color(42, 50, 38); // Warna latar gelap
-    Color activeColor = new Color(62, 66, 62); // Warna pilihan (highlight)
-    Color hoverColor = new Color(62, 66, 62);
+    Color defaultColor = new Color(23,21,59); // Warna latar gelap
+    Color activeColor = new Color(46,35,108); // Warna pilihan (highlight)
+    Color hoverColor = new Color(46,35,108);
 
     public KasirPage() {
         initComponents();
@@ -82,7 +82,7 @@ public class KasirPage extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jSplitPane1 = new javax.swing.JSplitPane();
+        SplitPane = new javax.swing.JSplitPane();
         jPanel2 = new javax.swing.JPanel();
         btnKeluar = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -131,11 +131,16 @@ public class KasirPage extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
-        jPanel2.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel2.setBackground(new java.awt.Color(23, 21, 59));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnKeluar.setBackground(new java.awt.Color(42, 50, 38));
+        btnKeluar.setBackground(new java.awt.Color(23, 21, 59));
         btnKeluar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnKeluarMouseClicked(evt);
@@ -161,21 +166,21 @@ public class KasirPage extends javax.swing.JFrame {
         btnKeluarLayout.setHorizontalGroup(
             btnKeluarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnKeluarLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(jLabel3)
+                .addContainerGap(126, Short.MAX_VALUE))
         );
         btnKeluarLayout.setVerticalGroup(
             btnKeluarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnKeluarLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 260, 40));
+        jPanel2.add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 260, 50));
 
-        btnLaporanRiwayat.setBackground(new java.awt.Color(42, 50, 38));
+        btnLaporanRiwayat.setBackground(new java.awt.Color(23, 21, 59));
         btnLaporanRiwayat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnLaporanRiwayatMouseClicked(evt);
@@ -202,20 +207,20 @@ public class KasirPage extends javax.swing.JFrame {
             btnLaporanRiwayatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanRiwayatLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addComponent(jLabel2)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         btnLaporanRiwayatLayout.setVerticalGroup(
             btnLaporanRiwayatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanRiwayatLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnLaporanRiwayat, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 260, 40));
+        jPanel2.add(btnLaporanRiwayat, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 260, 50));
 
-        btnLaporanKeuangan1.setBackground(new java.awt.Color(42, 50, 38));
+        btnLaporanKeuangan1.setBackground(new java.awt.Color(23, 21, 59));
         btnLaporanKeuangan1.setPreferredSize(new java.awt.Dimension(260, 28));
         btnLaporanKeuangan1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -242,21 +247,20 @@ public class KasirPage extends javax.swing.JFrame {
         btnLaporanKeuangan1Layout.setHorizontalGroup(
             btnLaporanKeuangan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanKeuangan1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(23, 23, 23)
                 .addComponent(jLabel4)
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         btnLaporanKeuangan1Layout.setVerticalGroup(
             btnLaporanKeuangan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanKeuangan1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
         );
 
-        jPanel2.add(btnLaporanKeuangan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 260, 40));
+        jPanel2.add(btnLaporanKeuangan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 260, 50));
 
-        btnPembelian.setBackground(new java.awt.Color(42, 50, 38));
+        btnPembelian.setBackground(new java.awt.Color(23, 21, 59));
         btnPembelian.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPembelianMouseClicked(evt);
@@ -282,32 +286,30 @@ public class KasirPage extends javax.swing.JFrame {
         btnPembelianLayout.setHorizontalGroup(
             btnPembelianLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnPembelianLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(22, 22, 22)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         btnPembelianLayout.setVerticalGroup(
             btnPembelianLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPembelianLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
+            .addGroup(btnPembelianLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnPembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, 40));
+        jPanel2.add(btnPembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, 50));
 
         lblUser.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         lblUser.setForeground(new java.awt.Color(255, 255, 255));
-        lblUser.setText("jLabel4");
-        jPanel2.add(lblUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 240, -1));
+        jPanel2.add(lblUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 210, 30));
 
         lblRole.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         lblRole.setForeground(new java.awt.Color(255, 255, 255));
         lblRole.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-user-26.png"))); // NOI18N
-        lblRole.setText("jLabel4");
         jPanel2.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 240, -1));
 
-        jPanel5.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel5.setBackground(new java.awt.Color(23, 21, 59));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -322,13 +324,13 @@ public class KasirPage extends javax.swing.JFrame {
 
         jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 110));
 
-        jSplitPane1.setLeftComponent(jPanel2);
+        SplitPane.setLeftComponent(jPanel2);
 
         Cards.setLayout(new java.awt.CardLayout());
 
-        card2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        card2.setLayout(new java.awt.BorderLayout());
 
-        jPanel3.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel3.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Total Harga          :");
@@ -361,7 +363,7 @@ public class KasirPage extends javax.swing.JFrame {
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel4.setBackground(new java.awt.Color(23, 21, 59));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-search-24.png"))); // NOI18N
@@ -384,6 +386,8 @@ public class KasirPage extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-purchase-28.png"))); // NOI18N
         jLabel7.setText("Pembelian");
 
+        jButton1.setBackground(new java.awt.Color(255, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Delete");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -422,7 +426,7 @@ public class KasirPage extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(lblKembali, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+                                .addComponent(lblKembali, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
                                 .addGap(455, 455, 455))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(lblTotalHarga, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -430,12 +434,11 @@ public class KasirPage extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
+                                .addComponent(jButton2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel16)
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(jButton2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
@@ -471,7 +474,7 @@ public class KasirPage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        card2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 220));
+        card2.add(jPanel3, java.awt.BorderLayout.PAGE_START);
 
         jScrollPane1.setFont(new java.awt.Font("Helvetica Neue", 0, 12)); // NOI18N
 
@@ -494,7 +497,7 @@ public class KasirPage extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblCart);
 
-        card2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 224, 744, 450));
+        card2.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         tblproduk.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -512,13 +515,13 @@ public class KasirPage extends javax.swing.JFrame {
             tblproduk.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        card2.add(scrolpane, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 224, 292, 450));
+        card2.add(scrolpane, java.awt.BorderLayout.LINE_END);
 
         Cards.add(card2, "card2");
 
         card3.setLayout(new java.awt.BorderLayout());
 
-        jPanel6.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel6.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-transaction-list-28.png"))); // NOI18N
 
@@ -530,14 +533,14 @@ public class KasirPage extends javax.swing.JFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1042, Short.MAX_VALUE)
+            .addGap(0, 1060, Short.MAX_VALUE)
             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel6Layout.createSequentialGroup()
                     .addGap(301, 301, 301)
                     .addComponent(jLabel11)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel12)
-                    .addContainerGap(499, Short.MAX_VALUE)))
+                    .addContainerGap(520, Short.MAX_VALUE)))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -580,7 +583,7 @@ public class KasirPage extends javax.swing.JFrame {
 
         card4.setLayout(new java.awt.BorderLayout());
 
-        jPanel7.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel7.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel6.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -592,14 +595,14 @@ public class KasirPage extends javax.swing.JFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1042, Short.MAX_VALUE)
+            .addGap(0, 1060, Short.MAX_VALUE)
             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel7Layout.createSequentialGroup()
                     .addGap(295, 295, 295)
                     .addComponent(jLabel13)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jLabel6)
-                    .addContainerGap(492, Short.MAX_VALUE)))
+                    .addContainerGap(513, Short.MAX_VALUE)))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -640,7 +643,7 @@ public class KasirPage extends javax.swing.JFrame {
 
         Cards.add(card4, "card4");
 
-        jSplitPane1.setRightComponent(Cards);
+        SplitPane.setRightComponent(Cards);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -648,11 +651,11 @@ public class KasirPage extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSplitPane1))
+                .addComponent(SplitPane))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1)
+            .addComponent(SplitPane)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -920,6 +923,11 @@ public class KasirPage extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }    }//GEN-LAST:event_txtIDActionPerformed
 
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        SplitPane.setEnabled(false); // Menonaktifkan kemampuan menggeser divider
+        SplitPane.setDividerSize(5); // Menyembunyikan divider (opsional)
+    }//GEN-LAST:event_formWindowOpened
+
     /**
      * @param args the command line arguments
      */
@@ -958,6 +966,7 @@ public class KasirPage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Cards;
+    private javax.swing.JSplitPane SplitPane;
     private javax.swing.JPanel btnKeluar;
     private javax.swing.JPanel btnLaporanKeuangan1;
     private javax.swing.JPanel btnLaporanRiwayat;
@@ -993,7 +1002,6 @@ public class KasirPage extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;

@@ -45,7 +45,7 @@ public class TambahData extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel1.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

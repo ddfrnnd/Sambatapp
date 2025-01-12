@@ -22,9 +22,9 @@ public class AdminPage extends javax.swing.JFrame {
     Profile p;
     static DefaultTableModel m, mod_p;
 
-    Color defaultColor = new Color(42, 50, 38); // Warna latar gelap
-    Color activeColor = new Color(62, 66, 62); // Warna pilihan (highlight)
-    Color hoverColor = new Color(62, 66, 62);
+    Color defaultColor = new Color(23,21,59); // Warna latar gelap
+    Color activeColor = new Color(46,35,108); // Warna pilihan (highlight)
+    Color hoverColor = new Color(46,35,108);
 
     public AdminPage() {
         initComponents();
@@ -103,10 +103,10 @@ public class AdminPage extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel2.setBackground(new java.awt.Color(23, 21, 59));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlDataUser.setBackground(new java.awt.Color(42, 50, 38));
+        pnlDataUser.setBackground(new java.awt.Color(23, 21, 59));
         pnlDataUser.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlDataUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -148,7 +148,7 @@ public class AdminPage extends javax.swing.JFrame {
 
         jPanel2.add(pnlDataUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 50));
 
-        pnlDataProduk.setBackground(new java.awt.Color(42, 50, 38));
+        pnlDataProduk.setBackground(new java.awt.Color(23, 21, 59));
         pnlDataProduk.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlDataProdukMouseClicked(evt);
@@ -196,9 +196,9 @@ public class AdminPage extends javax.swing.JFrame {
 
         labelUser.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
         labelUser.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel2.add(labelUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 170, 40));
+        jPanel2.add(labelUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 140, 30));
 
-        btnkeluar.setBackground(new java.awt.Color(42, 50, 38));
+        btnkeluar.setBackground(new java.awt.Color(23, 21, 59));
         btnkeluar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnkeluarMouseClicked(evt);
@@ -241,7 +241,7 @@ public class AdminPage extends javax.swing.JFrame {
 
         pnlCard1.setLayout(new java.awt.BorderLayout());
 
-        jPanel4.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel4.setBackground(new java.awt.Color(23, 21, 59));
 
         btnTambahUser.setFont(new java.awt.Font("JetBrains Mono", 0, 13)); // NOI18N
         btnTambahUser.setForeground(new java.awt.Color(42, 50, 38));
@@ -279,7 +279,7 @@ public class AdminPage extends javax.swing.JFrame {
             }
         });
 
-        jPanel3.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel3.setBackground(new java.awt.Color(23, 21, 59));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-search-24.png"))); // NOI18N
@@ -344,7 +344,7 @@ public class AdminPage extends javax.swing.JFrame {
 
         pnlCard2.setLayout(new java.awt.BorderLayout());
 
-        jPanel5.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel5.setBackground(new java.awt.Color(23, 21, 59));
 
         btnTambahProduk.setFont(new java.awt.Font("JetBrains Mono", 0, 13)); // NOI18N
         btnTambahProduk.setForeground(new java.awt.Color(42, 50, 38));
@@ -382,7 +382,7 @@ public class AdminPage extends javax.swing.JFrame {
             }
         });
 
-        jPanel6.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel6.setBackground(new java.awt.Color(23, 21, 59));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-search-24.png"))); // NOI18N

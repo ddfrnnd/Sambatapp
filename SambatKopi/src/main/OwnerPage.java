@@ -39,9 +39,9 @@ public class OwnerPage extends javax.swing.JFrame {
     CardLayout cardLayout;
     Profile p;
     DefaultTableModel tableModel;
-    Color defaultColor = new Color(42, 50, 38); // Warna latar gelap
-    Color activeColor = new Color(62, 66, 62); // Warna pilihan (highlight)
-    Color hoverColor = new Color(62, 66, 62);
+    Color defaultColor = new Color(23,21,59); // Warna latar gelap
+    Color activeColor = new Color(46,35,108); // Warna pilihan (highlight)
+    Color hoverColor = new Color(46,35,108);
 
     public OwnerPage() {
         initComponents();
@@ -92,11 +92,11 @@ public class OwnerPage extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         jLabelProdukTerjual = new javax.swing.JLabel();
-        jDateChooserSampai = new com.toedter.calendar.JDateChooser();
         jLabel7 = new javax.swing.JLabel();
-        jDateChooserDari = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jDateChooserDari = new com.toedter.calendar.JDateChooser();
+        jDateChooserSampai = new com.toedter.calendar.JDateChooser();
         card3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -112,10 +112,10 @@ public class OwnerPage extends javax.swing.JFrame {
         jPanel9 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jDateChooserPendapatanDari = new com.toedter.calendar.JDateChooser();
         jLabel13 = new javax.swing.JLabel();
-        jDateChooserPendapatanSampai = new com.toedter.calendar.JDateChooser();
         jLabelJumlahPendapatan = new javax.swing.JLabel();
+        jDateChooserPendapatanDari = new com.toedter.calendar.JDateChooser();
+        jDateChooserPendapatanSampai = new com.toedter.calendar.JDateChooser();
         card5 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
@@ -129,17 +129,17 @@ public class OwnerPage extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jDateChooserRankSampai = new com.toedter.calendar.JDateChooser();
         jDateChooserRankDari = new com.toedter.calendar.JDateChooser();
+        jDateChooserRankSampai = new com.toedter.calendar.JDateChooser();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTableRank = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel2.setBackground(new java.awt.Color(23, 21, 59));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnKeluar.setBackground(new java.awt.Color(42, 50, 38));
+        btnKeluar.setBackground(new java.awt.Color(23, 21, 59));
         btnKeluar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnKeluarMouseClicked(evt);
@@ -166,19 +166,19 @@ public class OwnerPage extends javax.swing.JFrame {
             btnKeluarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnKeluarLayout.createSequentialGroup()
                 .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addComponent(jLabel3)
+                .addGap(128, 128, 128))
         );
         btnKeluarLayout.setVerticalGroup(
             btnKeluarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnKeluarLayout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 10, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnKeluarLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
         );
 
-        jPanel2.add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 260, 50));
+        jPanel2.add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 260, 50));
 
-        btnLaporanRiwayat.setBackground(new java.awt.Color(42, 50, 38));
+        btnLaporanRiwayat.setBackground(new java.awt.Color(23, 21, 59));
         btnLaporanRiwayat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnLaporanRiwayatMouseClicked(evt);
@@ -211,14 +211,14 @@ public class OwnerPage extends javax.swing.JFrame {
         btnLaporanRiwayatLayout.setVerticalGroup(
             btnLaporanRiwayatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanRiwayatLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnLaporanRiwayat, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 231, 260, 50));
+        jPanel2.add(btnLaporanRiwayat, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 260, 50));
 
-        btnLaporanKeuangan1.setBackground(new java.awt.Color(42, 50, 38));
+        btnLaporanKeuangan1.setBackground(new java.awt.Color(23, 21, 59));
         btnLaporanKeuangan1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnLaporanKeuangan1MouseClicked(evt);
@@ -245,20 +245,20 @@ public class OwnerPage extends javax.swing.JFrame {
             btnLaporanKeuangan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanKeuangan1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addComponent(jLabel4)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         btnLaporanKeuangan1Layout.setVerticalGroup(
             btnLaporanKeuangan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnLaporanKeuangan1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnLaporanKeuangan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 260, 50));
+        jPanel2.add(btnLaporanKeuangan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 260, 50));
 
-        btnPembelian.setBackground(new java.awt.Color(42, 50, 38));
+        btnPembelian.setBackground(new java.awt.Color(23, 21, 59));
         btnPembelian.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPembelianMouseClicked(evt);
@@ -285,18 +285,18 @@ public class OwnerPage extends javax.swing.JFrame {
             btnPembelianLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnPembelianLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addComponent(jLabel1)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         btnPembelianLayout.setVerticalGroup(
             btnPembelianLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnPembelianLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(btnPembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 135, 260, 50));
+        jPanel2.add(btnPembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 260, 50));
 
         lblUser.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         lblUser.setForeground(new java.awt.Color(255, 255, 255));
@@ -309,7 +309,7 @@ public class OwnerPage extends javax.swing.JFrame {
         lblRole.setText("jLabel4");
         jPanel2.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 240, -1));
 
-        jPanel5.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel5.setBackground(new java.awt.Color(23, 21, 59));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -324,7 +324,7 @@ public class OwnerPage extends javax.swing.JFrame {
 
         jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 110));
 
-        jPanel10.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel10.setBackground(new java.awt.Color(23, 21, 59));
         jPanel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel10MouseClicked(evt);
@@ -357,13 +357,13 @@ public class OwnerPage extends javax.swing.JFrame {
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addComponent(jLabel14)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 260, 40));
+        jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 260, 50));
 
-        jPanel11.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel11.setBackground(new java.awt.Color(23, 21, 59));
         jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel11MouseClicked(evt);
@@ -396,12 +396,12 @@ public class OwnerPage extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel15)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
-        jPanel2.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 260, 40));
+        jPanel2.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 260, 50));
 
         jSplitPane1.setLeftComponent(jPanel2);
 
@@ -409,13 +409,13 @@ public class OwnerPage extends javax.swing.JFrame {
 
         card2.setLayout(new java.awt.BorderLayout());
 
-        jPanel3.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel3.setBackground(new java.awt.Color(23, 21, 59));
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
-        jPanel4.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel4.setBackground(new java.awt.Color(23, 21, 59));
         jPanel4.setLayout(new java.awt.GridBagLayout());
 
-        jPanel14.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel14.setBackground(new java.awt.Color(23, 21, 59));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelProdukTerjual.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
@@ -424,26 +424,10 @@ public class OwnerPage extends javax.swing.JFrame {
         jLabelProdukTerjual.setText("0");
         jPanel14.add(jLabelProdukTerjual, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 440, -1));
 
-        jDateChooserSampai.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jDateChooserSampai.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserSampaiPropertyChange(evt);
-            }
-        });
-        jPanel14.add(jDateChooserSampai, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 191, 364, 45));
-
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Sampai:");
         jPanel14.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 192, -1, -1));
-
-        jDateChooserDari.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jDateChooserDari.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserDariPropertyChange(evt);
-            }
-        });
-        jPanel14.add(jDateChooserDari, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 128, 362, 45));
 
         jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -454,6 +438,8 @@ public class OwnerPage extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Produk Terjual");
         jPanel14.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, -1, -1));
+        jPanel14.add(jDateChooserDari, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 260, 40));
+        jPanel14.add(jDateChooserSampai, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 260, 40));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -479,69 +465,60 @@ public class OwnerPage extends javax.swing.JFrame {
 
         card3.setLayout(new java.awt.BorderLayout());
 
-        jPanel8.setBackground(new java.awt.Color(42, 50, 38));
-        jPanel8.setLayout(new java.awt.GridBagLayout());
+        jPanel8.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel8.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-profitability-28.png"))); // NOI18N
         jLabel8.setText("Produk Terlaris");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(19, 57, 0, 0);
-        jPanel8.add(jLabel8, gridBagConstraints);
 
         jLabel9.setFont(new java.awt.Font("Helvetica Neue", 0, 15)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Dari:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 181, 0, 0);
-        jPanel8.add(jLabel9, gridBagConstraints);
 
         jLabel10.setFont(new java.awt.Font("Helvetica Neue", 0, 15)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Sampai:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(8, 157, 0, 0);
-        jPanel8.add(jLabel10, gridBagConstraints);
 
-        jDateChooserTerlarisDari.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserTerlarisDariPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 298;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 18, 0, 123);
-        jPanel8.add(jDateChooserTerlarisDari, gridBagConstraints);
-
-        jDateChooserTerlarisSampai.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserTerlarisSampaiPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 298;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 18, 30, 123);
-        jPanel8.add(jDateChooserTerlarisSampai, gridBagConstraints);
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(230, 230, 230)
+                        .addComponent(jLabel10)))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel8))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jDateChooserTerlarisSampai, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jDateChooserTerlarisDari, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(167, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel9))
+                    .addComponent(jDateChooserTerlarisDari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(jDateChooserTerlarisSampai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
 
         card3.add(jPanel8, java.awt.BorderLayout.PAGE_START);
 
@@ -566,9 +543,9 @@ public class OwnerPage extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(42, 50, 38));
 
-        jPanel7.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel7.setBackground(new java.awt.Color(23, 21, 59));
 
-        jPanel9.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel9.setBackground(new java.awt.Color(23, 21, 59));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
@@ -581,32 +558,18 @@ public class OwnerPage extends javax.swing.JFrame {
         jLabel12.setText("Dari:");
         jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 119, 50));
 
-        jDateChooserPendapatanDari.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jDateChooserPendapatanDari.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserPendapatanDariPropertyChange(evt);
-            }
-        });
-        jPanel9.add(jDateChooserPendapatanDari, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 293, 40));
-
         jLabel13.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Sampai:");
         jPanel9.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 170, -1));
-
-        jDateChooserPendapatanSampai.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jDateChooserPendapatanSampai.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserPendapatanSampaiPropertyChange(evt);
-            }
-        });
-        jPanel9.add(jDateChooserPendapatanSampai, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 293, 40));
 
         jLabelJumlahPendapatan.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
         jLabelJumlahPendapatan.setForeground(new java.awt.Color(255, 255, 255));
         jLabelJumlahPendapatan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelJumlahPendapatan.setText("Rp. XXX.XXX.XXX");
         jPanel9.add(jLabelJumlahPendapatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
+        jPanel9.add(jDateChooserPendapatanDari, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 300, 40));
+        jPanel9.add(jDateChooserPendapatanSampai, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 300, 40));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -615,14 +578,14 @@ public class OwnerPage extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 584, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(110, Short.MAX_VALUE))
+                .addContainerGap(238, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -644,67 +607,55 @@ public class OwnerPage extends javax.swing.JFrame {
 
         card5.setLayout(new java.awt.BorderLayout());
 
-        jPanel12.setBackground(new java.awt.Color(42, 50, 38));
-        jPanel12.setLayout(new java.awt.GridBagLayout());
+        jPanel12.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel16.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText(" Grafik Penjualan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(24, 15, 0, 0);
-        jPanel12.add(jLabel16, gridBagConstraints);
 
         jLabel17.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Dari:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 232, 0, 0);
-        jPanel12.add(jLabel17, gridBagConstraints);
 
         jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Sampai:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 206, 0, 0);
-        jPanel12.add(jLabel18, gridBagConstraints);
 
-        jDateChooserGrafikDari.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserGrafikDariPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.ipadx = 178;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 190);
-        jPanel12.add(jDateChooserGrafikDari, gridBagConstraints);
-
-        jDateChooserGrafikSampai.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserGrafikSampaiPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 178;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 18, 32, 190);
-        jPanel12.add(jDateChooserGrafikSampai, gridBagConstraints);
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel17))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jDateChooserGrafikDari, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jDateChooserGrafikSampai, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(281, 281, 281)
+                        .addComponent(jLabel16)))
+                .addContainerGap(234, Short.MAX_VALUE))
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel16)
+                .addGap(13, 13, 13)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel17)
+                    .addComponent(jDateChooserGrafikDari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel18)
+                    .addComponent(jDateChooserGrafikSampai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
 
         card5.add(jPanel12, java.awt.BorderLayout.PAGE_START);
 
@@ -715,68 +666,55 @@ public class OwnerPage extends javax.swing.JFrame {
 
         card6.setLayout(new java.awt.BorderLayout());
 
-        jPanel13.setBackground(new java.awt.Color(42, 50, 38));
-        jPanel13.setLayout(new java.awt.GridBagLayout());
+        jPanel13.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel19.setFont(new java.awt.Font("JetBrains Mono", 0, 21)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Kasir Rank");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 33, 0, 0);
-        jPanel13.add(jLabel19, gridBagConstraints);
 
         jLabel20.setFont(new java.awt.Font("Helvetica Neue", 0, 15)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Dari:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 234, 0, 0);
-        jPanel13.add(jLabel20, gridBagConstraints);
 
         jLabel21.setFont(new java.awt.Font("Helvetica Neue", 0, 15)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Sampai:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 234, 12, 0);
-        jPanel13.add(jLabel21, gridBagConstraints);
 
-        jDateChooserRankSampai.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserRankSampaiPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.ipadx = 113;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 18, 12, 231);
-        jPanel13.add(jDateChooserRankSampai, gridBagConstraints);
-
-        jDateChooserRankDari.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooserRankDariPropertyChange(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 113;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 18, 0, 231);
-        jPanel13.add(jDateChooserRankDari, gridBagConstraints);
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(325, 325, 325)
+                        .addComponent(jLabel19))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(213, 213, 213)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel20))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jDateChooserRankDari, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE)
+                            .addComponent(jDateChooserRankSampai, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(256, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel20)
+                    .addComponent(jDateChooserRankDari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21)
+                    .addComponent(jDateChooserRankSampai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
 
         card6.add(jPanel13, java.awt.BorderLayout.PAGE_START);
 

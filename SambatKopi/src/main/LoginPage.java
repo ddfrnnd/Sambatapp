@@ -57,7 +57,7 @@ public class LoginPage extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(42, 50, 38));
+        jPanel2.setBackground(new java.awt.Color(23, 21, 59));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-cafe-100.png"))); // NOI18N
@@ -90,7 +90,7 @@ public class LoginPage extends javax.swing.JFrame {
                 .addGap(98, 98, 98))
         );
 
-        jPanel3.setBackground(new java.awt.Color(62, 66, 62));
+        jPanel3.setBackground(new java.awt.Color(46, 35, 108));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
@@ -102,7 +102,7 @@ public class LoginPage extends javax.swing.JFrame {
         jSeparator1.setMaximumSize(new java.awt.Dimension(32767, 5));
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 210, 20));
 
-        txtUsername.setBackground(new java.awt.Color(62, 66, 62));
+        txtUsername.setBackground(new java.awt.Color(46, 35, 108));
         txtUsername.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         txtUsername.setForeground(new java.awt.Color(255, 255, 255));
         txtUsername.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -115,7 +115,7 @@ public class LoginPage extends javax.swing.JFrame {
         });
         jPanel3.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 210, 40));
 
-        txtPassword.setBackground(new java.awt.Color(62, 66, 62));
+        txtPassword.setBackground(new java.awt.Color(46, 35, 108));
         txtPassword.setForeground(new java.awt.Color(255, 255, 255));
         txtPassword.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtPassword.setText("Password");
